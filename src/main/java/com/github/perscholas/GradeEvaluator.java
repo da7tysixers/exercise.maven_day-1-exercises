@@ -45,13 +45,13 @@ public class GradeEvaluator {
     }
 
     public Character getGrade(Double score) {
-        if(score <= 100 && score >= 90){
+        if(isGradeA(score)){
             return 'A';
-        }else if (score <= 89 && score >= 80){
+        }else if (isGradeB(score)){
             return 'B';
-        }else if (score <= 79 && score >= 70){
+        }else if (isGradeC(score)){
             return 'C';
-        }else if (score <= 69 && score >= 65){
+        }else if (isGradeD(score)){
             return 'D';
         }else {
             return 'F';
